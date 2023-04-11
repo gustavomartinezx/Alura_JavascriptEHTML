@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+
+<script>
+    quantidade_familiares = parseInt(prompt("Insira a quantidade de familiares: "));
+    contador = 1
+    var totalIdades = 0
+
+
+    while(contador<=quantidade_familiares){
+
+        var idades = parseInt(prompt("Insira a idade de cada familiar"));
+        totalIdades = totalIdades + idades 
+        contador++;    
+    }
+
+    document.write("O total de idades é " + totalIdades)
+</script>

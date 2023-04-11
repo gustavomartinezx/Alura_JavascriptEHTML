@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<script>
+    function func_numaleatorio(n){
+        Math.round(Math.random * n)
+    }
+
+    var num_aleatorio = func_numaleatorio(10);
+    console.log(num_aleatorio)
+    
+    var limite = parseInt(1);
+    var teste_limite = parseInt(3);
+
+    while(limite<=teste_limite){
+        var num_chutado = parseInt(prompt("Chute um número: "))
+        
+        if(num_chutado == num_aleatorio){
+
+            alert("Você acertou!")
+        } else{
+            if(limite == 3){
+
+                alert("Limite atingido!")
+            } else {
+
+                alert("Tente novamente!");
+                limite++;
+            }
+        }
+    }
+</script>

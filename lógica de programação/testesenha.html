@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+    var login = "alura123";
+    var senha = "alura321";
+
+
+    var limite = 3
+    var tentativas = 1
+
+    while(tentativas <= limite){
+
+        var login_user = prompt("Insira o seu login: ");
+        var senha_user = prompt("Insira a sua senha: ");
+
+        if ( login == login_user && senha == senha_user ){
+
+            alert("Usuário aprovado");
+
+        } else { 
+            if (tentativas  == 3) {
+                alert("Tentativas máximas!");
+            } else {
+                alert("Acesso negado!");
+                tentativas = tentativas + 1
+
+            }
+        }
+    }
+
+</script>
