@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<script>
+
+    function CalcularIMC(altura, peso) {
+
+        return peso / (altura * altura);
+
+    }
+
+    altura1 = parseFloat(prompt("Insira a sua altura"));
+    peso1 = parseFloat(prompt("Insira o seu peso: "));
+    
+    var imc = CalcularIMC(altura1, peso1);
+
+    document.write("Seu imc é: " + Math.round(imc));
+    document.write("<br><br>")
+
+    if(imc < 18.5) {
+
+        document.write("Seu imc é abaixo da média!");
+
+    }
+
+    if(imc>= 18.5 && imc <= 35) {
+
+        document.write("Seu imc está na  média");
+
+    }
+
+    if(imc > 35 ) {
+
+        document.write("Porpeta!");
+
+    }
+
+</script>

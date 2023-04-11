@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function num_aleatorio(n){
+
+     return Math.round(Math.random() * n);   
+    
+    }
+
+    var chute = num_aleatorio(10);
+
+    escolha = parseInt(prompt("Chute um número"));
+
+    if(escolha == chute) {
+
+        document.write("Seu número é igual!")
+
+    } else {
+
+        document.write("Diferente!")
+
+    }
+    
+    console.log(chute);
+
+</script>
