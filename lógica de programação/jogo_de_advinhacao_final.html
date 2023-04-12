@@ -1,10 +1,13 @@
 <meta charset="UTF-8">
 <script>
-    function func_numaleatorio(n){
-        Math.round(Math.random * n)
+
+    function chute(n){
+
+        return Math.round(Math.random() * n);
+
     }
 
-    var num_aleatorio = func_numaleatorio(10);
+    var num_aleatorio = chute(10);
     console.log(num_aleatorio)
     
     var limite = parseInt(1);
@@ -15,7 +18,8 @@
         
         if(num_chutado == num_aleatorio){
 
-            alert("Você acertou!")
+            alert("Você acertou!");
+            break;
         } else{
             if(limite == 3){
 
@@ -23,8 +27,9 @@
             } else {
 
                 alert("Tente novamente!");
-                limite++;
             }
         }
+
+        limite++;
     }
 </script>
